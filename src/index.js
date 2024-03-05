@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider,createBrowserRouter,HashRouter } from 'react-router-dom';
 import RegisterPage from "./pages/register"
 import DashboardPage from "./pages/dashboard"
-const router = HashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <RegisterPage/>,
