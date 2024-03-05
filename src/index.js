@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider,createBrowserRouter,HashRouter } from 'react-router-dom';
+import { RouterProvider,createBrowserRouter,createHashRouter} from 'react-router-dom';
 import RegisterPage from "./pages/register"
 import DashboardPage from "./pages/dashboard"
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <RegisterPage/>,
-    
+  
   },
   {
     path:"/dashboard",
